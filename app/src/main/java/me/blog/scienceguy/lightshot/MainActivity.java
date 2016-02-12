@@ -121,9 +121,8 @@ public class MainActivity extends AppCompatActivity {
         return new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                isTouch[colorIndex] = true;
-                if (event.getAction() == MotionEvent.ACTION_UP) isTouch[colorIndex] = false;
-                if (color[colorIndex] < 255) color[colorIndex]++;
+                isTouch[colorIndex] = (event.getAction() != MotionEvent.ACTION_UP);
+                if(color[colorIndex] < 255) color[colorIndex]++;
                 return false;
             }
         };
