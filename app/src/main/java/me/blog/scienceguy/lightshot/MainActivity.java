@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private View.OnTouchListener buttonListenerFactory(final int colorIndex) {
-        View.OnTouchListener listener = new View.OnTouchListener() {
+        return new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 isTouch[colorIndex] = true;
@@ -127,6 +127,5 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         };
-        return listener;
     }
 }
