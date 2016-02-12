@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     Thread.sleep(50);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
+                    break;
                 }
             }
         }
