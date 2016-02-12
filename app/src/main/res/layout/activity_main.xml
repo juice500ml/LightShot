@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="me.blog.scienceguy.lightshot.MainActivity"
+    android:id="@+id/full"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <Button
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:id="@+id/buttonAlpha"
+            android:textAlignment="center" />
+        <Button
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:id="@+id/buttonRed"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:text="SCREENSHOT"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonShot"
+        android:longClickable="false"
+        android:textAlignment="center" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <Button
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:id="@+id/buttonGreen"
+            android:longClickable="false"
+            android:textAlignment="center" />
+        <Button
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:id="@+id/buttonBlue"
+            android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>
